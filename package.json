@@ -2,6 +2,7 @@
   "name": "react_portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/kairoberts/react_portfolio",
   "dependencies": {
     "3d-react-carousal": "^3.1.0",
     "@testing-library/dom": "^7.24.4",
