@@ -2,7 +2,7 @@
   "name": "react_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kairoberts.github.io/react_portfolio",
+  "homepage": "https://kairoberts.github.io/react_portfolio/",
   "dependencies": {
     "3d-react-carousal": "^3.1.0",
     "@testing-library/dom": "^7.24.4",
@@ -27,7 +27,7 @@
     "typescript": "^4.0.3"
   },
   "scripts": {
-    "predeploy": "yarn run build",
+    "predeploy": "yarn build",
     "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
