@@ -34,6 +34,11 @@ header {
   right: 0%;
   bottom: 0;
   cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#scroll-btn:hover {
+  transform: scale(1.06);
 }
 
 .logo {
@@ -596,9 +601,9 @@ and (max-device-width : 640px)  {
   .bm-burger-button {
     position: fixed;
     width: 45px;
-    height: 35px;
+    height: 55px;
     left: 5px;
-    top: 5px;
+    top: -5px;
   }
 
   .mobile-logo {
@@ -614,7 +619,7 @@ and (max-device-width : 640px)  {
   }
 
   .logo:hover {
-    transform: scale(1);
+    transform: none;
   }
 
   .icons-container {
@@ -647,6 +652,11 @@ and (max-device-width : 640px)  {
 
   #scroll-btn {
     height: 100px;
+    width: 15%;
+  }
+
+  #scroll-btn:hover {
+    transform: none;
   }
 
   /* Header ends here */

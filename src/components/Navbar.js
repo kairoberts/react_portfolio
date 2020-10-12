@@ -13,7 +13,6 @@ const Navbar = () => {
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 2 }}
       className='navbar-container' id='navbar'>
-      <scrollButton />
 
       <Link
         activeClass="active"

@@ -1,7 +1,7 @@
 import React from 'react';
 import MobileMenu from './MobileMenu';
 import Navbar from './Navbar';
-import { FiArrowUpCircle } from 'react-icons/fi';
+import { IoIosArrowDropup } from 'react-icons/io';
 import { animateScroll as scroll } from 'react-scroll';
 
 
@@ -42,7 +42,7 @@ const Header = () => {
     <header id='header'>
       <MobileMenu />
       <Navbar />
-      <FiArrowUpCircle id='scroll-btn' onClick={() => scroll.scrollToTop()} />
+      <IoIosArrowDropup id='scroll-btn' onClick={() => scroll.scrollToTop()} />
 
     </header>
 

@@ -59,7 +59,7 @@ const About = () => {
                 <p>MySQL (45%)</p>
               </div>
               <div className='skill'>
-                <FaGit size={70} />
+                <FaGit size={50} />
                 <p>Git (70%)</p>
               </div>
               <div className='skill'>
