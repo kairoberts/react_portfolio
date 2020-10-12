@@ -453,11 +453,12 @@ header {
 
 /* Clients starts here */
 .hidden-container{ 
-  height: 150px;
+  height: 200px;
   width: 100%;
   overflow: hidden;
   background-color: white;
   position: sticky;
+
 }
 
 .hidden-container h3, p {

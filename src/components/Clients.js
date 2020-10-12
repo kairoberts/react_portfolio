@@ -1,33 +1,37 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { IoLogoYoutube } from 'react-icons/io';
+import { AiOutlineYoutube } from 'react-icons/ai';
+import { FiInstagram } from 'react-icons/fi';
+import { RiTwitterLine } from 'react-icons/ri';
+import { GrLinkedinOption } from 'react-icons/gr';
+import { FiFacebook } from 'react-icons/fi';
+import { FiGithub } from 'react-icons/fi';
+import { AiOutlineReddit } from 'react-icons/ai';
+import { FaPinterestP } from 'react-icons/fa';
+import { FiChrome } from 'react-icons/fi';
+import { DiFirefox } from 'react-icons/di';
+import { SiSafari } from 'react-icons/si';
+import { Fade } from "react-awesome-reveal";
+
 
 
 const Clients = () => {
   return (
 
     <div className='hidden-container'>
-      <motion.h3
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 2 }}
-      >Clients</motion.h3>
+      <Fade duration="3000" triggerOnce={true}><h3>Clients</h3></Fade>
+      <p>These are not official clients, just examples for demonstration purposes</p>
       <div className='client-container'>
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
-        <IoLogoYoutube alt='coming soon' className='client-logo' />
+        <AiOutlineYoutube alt='coming soon' className='client-logo' />
+        <SiSafari alt='coming soon' className='client-logo' />
+        <FiInstagram alt='coming soon' className='client-logo' />
+        <RiTwitterLine alt='coming soon' className='client-logo' />
+        <GrLinkedinOption alt='coming soon' className='client-logo' />
+        <FiFacebook alt='coming soon' className='client-logo' />
+        <DiFirefox alt='coming soon' className='client-logo' />
+        <FiGithub alt='coming soon' className='client-logo' />
+        <AiOutlineReddit alt='coming soon' className='client-logo' />
+        <FaPinterestP alt='coming soon' className='client-logo' />
+        <FiChrome alt='coming soon' className='client-logo' />
       </div>
     </div>
   )
