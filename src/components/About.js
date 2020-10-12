@@ -10,6 +10,7 @@ import { SiPython } from 'react-icons/si';
 import { SiMysql } from 'react-icons/si';
 import { GiPencilBrush } from 'react-icons/gi';
 import { BsCameraVideo } from 'react-icons/bs';
+import { FaGit } from 'react-icons/fa';
 
 
 const About = () => {
@@ -56,6 +57,10 @@ const About = () => {
               <div className='skill'>
                 <SiMysql size={70} />
                 <p>MySQL (45%)</p>
+              </div>
+              <div className='skill'>
+                <FaGit size={70} />
+                <p>Git (70%)</p>
               </div>
               <div className='skill'>
                 <GiPencilBrush size={55} />
