@@ -5,7 +5,6 @@ import { IoIosArrowDropup } from 'react-icons/io';
 import { animateScroll as scroll } from 'react-scroll';
 
 
-
 const Header = () => {
 
   window.onscroll = function () { hiddenButton() };
@@ -43,7 +42,6 @@ const Header = () => {
       <MobileMenu />
       <Navbar />
       <IoIosArrowDropup id='scroll-btn' onClick={() => scroll.scrollToTop()} />
-
     </header>
 
   )
