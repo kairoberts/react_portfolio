@@ -27,7 +27,7 @@ const About = () => {
           <div className='info-container'>
             <Fade direction="up" duration="2000" triggerOnce={true}>
               <h5>Kai Roberts</h5>
-              <h5>2017 – 2020 BSc (Hons) Computer Science (2:1 – 68%), York St. John University.</h5><p className='content-message'>I am a 22 year old Computer Science Graduate, who prides himself on hard work and being self-motivated. I hold relevant work experience in Web Development regarding working alongside a client in designing and developing a webpage for their business. Any of the skills below are constantly being improved on daily.</p>
+              <h5>2017 – 2020 BSc (Hons) Computer Science (2:1 – 68%), York St. John University.</h5><p className='content-message'>I am a 22 year old Computer Science Graduate from Newcastle upon Tyne, England. I pride himself on hard work and being self-motivated and hold relevant work experience in Web Development regarding working alongside a client in designing and developing a webpage for their business. Any of the skills below are constantly being improved on daily.</p>
             </Fade>
             <Fade direction="right" duration="3000" triggerOnce={true}>
               <div className='skills-container'>

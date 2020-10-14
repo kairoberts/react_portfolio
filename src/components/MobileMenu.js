@@ -6,6 +6,9 @@ import { stack as Menu } from 'react-burger-menu'
 import { BiMenuAltLeft } from 'react-icons/bi';
 import { VscChromeClose } from 'react-icons/vsc';
 import { CgMenuMotion } from 'react-icons/cg';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { SiInstagram } from 'react-icons/si';
+import { FiGithub } from 'react-icons/fi';
 
 
 
@@ -48,6 +51,11 @@ const MobileMenu = () => {
             duration={800}
             className='navbar-links'
           ><CgMenuMotion size={30} /> Contact</Link>
+          <div className='flex-item'>
+          <a href='https://www.instagram.com/_kairoberts' className='icons'><SiInstagram size={30} /></a>
+          <a href='https://www.linkedin.com/in/kairobertss' className='icons'><AiOutlineLinkedin size={35} /></a>
+          <a href='https://github.com/kairoberts' className='icons'> <FiGithub size={30} /></a>
+        </div>
         </Menu>
       </div>
     </div>

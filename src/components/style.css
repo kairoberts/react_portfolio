@@ -112,7 +112,7 @@ header {
 
 .banner-info {
   height: 300px;
-  width: 40%;
+  width: 45%;
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
   position: absolute;
@@ -120,7 +120,7 @@ header {
   font-size: 45px;
   top: 50%;
   left: 50%;
-  transform: translate(-100%, -65%);
+  transform: translate(-95%, -65%);
 }
 
 .banner-info h1 {
@@ -129,8 +129,21 @@ header {
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 
+.flex-item {
+  display: block;
+}
+
+.flex-item a {
+  color: black !important;
+}
+
+.flex-item a:hover {
+  color: white !important;
+}
+
 .responsive-font {
   padding: 0%;
+  margin: 0%;
   font-size: 1.8vw;
   color: black;
 }
@@ -143,7 +156,7 @@ header {
   height: 30px;
   width: 30px;
   position: absolute;
-  transform: translateY(-40px) translateX(560px) rotate(45deg)
+  transform: translateY(-50px) translateX(600px) rotate(45deg)
 }
 
 .scroll-arrow span {
@@ -425,18 +438,18 @@ header {
 
 /* Contact me starts here */
 .form-container {
-  width: 40vw;
+  width: 60vw;
   margin: 0 auto;
+  height: 600px;
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
 }
 
-::-webkit-input-placeholder {
-  text-align: center;
-}
-
-.form-container textarea {
-  resize: none;
+.textField {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .contact-btn {
@@ -528,9 +541,7 @@ footer {
   display: inline;
 }
 
-.icons-container a {
-  color: black !important;
-}
+
 
 .icons {
   height: 30px;
@@ -541,9 +552,7 @@ footer {
   cursor: pointer;
 }
 
-.flex-item {
-  display: inline;
-}
+
 
 .btn-toTop {
   cursor: pointer;
@@ -615,6 +624,10 @@ and (max-device-width : 640px)  {
     top: 5px;
   }
 
+  .icons {
+    margin: 6%;
+  }
+
   .logo {
     margin-right: 70px;
   }
@@ -635,11 +648,11 @@ and (max-device-width : 640px)  {
   }
 
   .flex-item {
-    margin: 5%;
-  }
-
-  .icons {
-    margin: 4%;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    display: none;
+    width: 100%;
   }
 
   .border-outline {
@@ -688,7 +701,7 @@ and (max-device-width : 640px)  {
     font-family: 'Ubuntu', sans-serif;
     color: white;
     position: absolute;
-    left: 390px;
+    left: 375px;
   }
 
   .banner-info h1 {
@@ -713,7 +726,8 @@ and (max-device-width : 640px)  {
   }
 
   .child-links h1 {
-  font-size: 6vw;
+    font-size: 6vw;
+    margin-bottom: 50px;
   }
 
   .child-links p {
@@ -721,8 +735,8 @@ and (max-device-width : 640px)  {
   }
 
   .links-img {
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
     align-items: center;
   }
 
@@ -857,6 +871,10 @@ and (max-device-width : 640px)  {
   /* Contact starts here */
   .form-container {
     width: 90%;
+  }
+
+  .textField {
+    width: 90%;    
   }
   /* Contact ends here */
 }

@@ -5,6 +5,9 @@ import tynebridge from './Images/tynebridge.jpg';
 import cv from './File/KaiRobertsCV.pdf';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { SiInstagram } from 'react-icons/si';
+import { FiGithub } from 'react-icons/fi';
 
 
 
@@ -35,10 +38,21 @@ const Banner = () => {
           transition={{ delay: 3, type: 'spring', stiffness: 150 }}
           className='responsive-font'>Please note that this website is still in development, so things like responsiveness and the contact form are not fully complete yet. Thank you, Kai.</motion.p>
 
+        <motion.div
+          initial={{ y: -500 }}
+          animate={{ y: 0 }}
+          transition={{ delay: 3, type: 'spring', stiffness: 150 }}
+          className='flex-item'>
+          <a href='https://www.instagram.com/_kairoberts' className='icons'><SiInstagram size={30} /></a>
+          <a href='https://www.linkedin.com/in/kairobertss' className='icons'><AiOutlineLinkedin size={35} /></a>
+          <a href='https://github.com/kairoberts' className='icons'> <FiGithub size={30} /></a>
+        </motion.div>
+
         <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-110} duration={600} ><Button
           variant="outline-light" className='btn-container'>Get In Touch</Button></Link>
 
         <Button variant="outline-light" className='btn-container' href={cv} download='KaiRobertsCV'>Download CV</Button>
+
         <Link
           to="about"
           spy={true}
@@ -51,7 +65,6 @@ const Banner = () => {
             <span></span>
           </div>
         </Link>
-
       </div>
     </motion.div>
 
