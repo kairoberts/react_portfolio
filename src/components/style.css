@@ -133,7 +133,7 @@ header {
   display: block;
 }
 
-.flex-item a {
+.flex-item a:focus {
   color: black !important;
 }
 
@@ -653,6 +653,23 @@ and (max-device-width : 640px)  {
     left: 5px;
     display: none;
     width: 100%;
+  }
+
+  .flex-item :hover, :focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .flex-item a {
+    color: black !important;
+  }
+
+  .flex-item a:hover, a:focus {
+    color: purple !important;
+  }
+
+  .flex-item :focus {
+    outline: none;
   }
 
   .border-outline {
