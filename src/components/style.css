@@ -133,7 +133,7 @@ header {
   display: block;
 }
 
-.flex-item a:focus {
+.flex-item a {
   color: black !important;
 }
 
