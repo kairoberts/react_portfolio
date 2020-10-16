@@ -62,7 +62,7 @@ header {
 }
 
 .navbar-links {
-  margin:6vw 2.5vw 2.5vw 2.5vw;
+  margin:4vw 2.5vw 2.5vw 2.5vw;
   font-family: 'Syne', sans-serif;
   white-space: nowrap;
   width: 15%;
@@ -819,6 +819,7 @@ and (max-device-width : 640px)  {
   }
 
   .skills-container {
+    margin-top: 2%;
     width: 95vw;
     text-align: center;
   }
@@ -893,4 +894,29 @@ and (max-device-width : 640px)  {
     width: 90%;    
   }
   /* Contact ends here */
+}
+
+
+/* Larger Screen Media Queries */
+@media screen and (min-device-width: 1800px){
+
+  .contain-banner {
+    height: 700px;
+  }
+
+  .banner-info {
+    transform: translate(-95%, -80%);
+  }
+
+  .scroll-arrow {
+    transform: translateY(-70px) translateX(810px) rotate(45deg);
+  }
+
+  .links-container {
+    height: 300px;
+  }
+
+  .skills-container {
+    margin-top: 5%;
+  }
 }

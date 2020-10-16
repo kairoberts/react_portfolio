@@ -28,10 +28,10 @@ const Header = () => {
       document.getElementById("navbar").style.height = "14vh";
       document.getElementById("shrink-logo").style.height = "110px";
       document.getElementById("shrink-logo").style.width = "230px";
-      document.getElementById("shrink-links").style.margin = "6vw 2.5vw 2.5vw 2.5vw";
-      document.getElementById("shrink-linkss").style.margin = "6vw 2.5vw 2.5vw 2.5vw";
-      document.getElementById("shrink-linksss").style.margin = "6vw 2.5vw 2.5vw 2.5vw";
-      document.getElementById("shrink-linkssss").style.margin = "6vw 2.5vw 2.5vw 2.5vw";
+      document.getElementById("shrink-links").style.margin = "4vw 2.5vw 2.5vw 2.5vw";
+      document.getElementById("shrink-linkss").style.margin = "4vw 2.5vw 2.5vw 2.5vw";
+      document.getElementById("shrink-linksss").style.margin = "4vw 2.5vw 2.5vw 2.5vw";
+      document.getElementById("shrink-linkssss").style.margin = "4vw 2.5vw 2.5vw 2.5vw";
     }
   }
 

@@ -36,7 +36,7 @@ const Banner = () => {
           initial={{ y: -500 }}
           animate={{ y: 0 }}
           transition={{ delay: 3, type: 'spring', stiffness: 150 }}
-          className='responsive-font'>Please note that this website is still in development, so things like responsiveness and the contact form are not fully complete yet. Thank you, Kai.</motion.p>
+          className='responsive-font'>Please note that this website is still in development and is for demonstration purposes only at the moment, so some elements may not work yet. Thank you, Kai.</motion.p>
 
         <motion.div
           initial={{ y: -500 }}

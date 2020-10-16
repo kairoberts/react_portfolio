@@ -11,6 +11,7 @@ import { SiMysql } from 'react-icons/si';
 import { GiPencilBrush } from 'react-icons/gi';
 import { BsCameraVideo } from 'react-icons/bs';
 import { FaGit } from 'react-icons/fa';
+import { FaNode } from 'react-icons/fa';
 import { Fade } from "react-awesome-reveal";
 
 
@@ -34,47 +35,51 @@ const About = () => {
                 <h2>My Skills:</h2>
                 <div className='skill'>
                   <AiFillHtml5 size={55} />
-                  <p>HTML (90%)</p>
+                  <p>HTML</p>
                 </div>
                 <div className='skill'>
                   <DiCss3 size={55} />
-                  <p>CSS (90%)</p>
+                  <p>CSS</p>
                 </div>
                 <div className='skill'>
                   <IoLogoJavascript size={55} />
-                  <p>JavaScript (65%)</p>
+                  <p>JavaScript</p>
                 </div>
                 <div className='skill'>
                   <FaReact size={50} />
-                  <p>React (80%)</p>
+                  <p>React</p>
                 </div>
                 <div className='skill'>
                   <BsFillBootstrapFill size={50} />
-                  <p>Bootstrap (85%)</p>
+                  <p>Bootstrap</p>
                 </div>
                 <div className='skill'>
                   <FaPhp size={55} />
-                  <p>PHP (60%)</p>
-                </div>
+                  <p>PHP</p>
+                </div>                
                 <div className='skill'>
                   <SiPython size={55} />
-                  <p>Python (60%)</p>
+                  <p>Python</p>
                 </div>
                 <div className='skill'>
                   <SiMysql size={70} />
-                  <p>MySQL (45%)</p>
+                  <p>MySQL</p>
+                </div>
+                <div className='skill'>
+                  <FaNode size={55} />
+                  <p>Node</p>
                 </div>
                 <div className='skill'>
                   <FaGit size={50} />
-                  <p>Git (70%)</p>
+                  <p>Git</p>
                 </div>
                 <div className='skill'>
                   <GiPencilBrush size={55} />
-                  <p>UX Design (65%)</p>
+                  <p>UX Design</p>
                 </div>
                 <div className='skill'>
                   <BsCameraVideo size={55} />
-                  <p>Final Cut Pro X (30%)</p>
+                  <p>Final Cut Pro X</p>
                 </div>
               </div>
             </Fade>

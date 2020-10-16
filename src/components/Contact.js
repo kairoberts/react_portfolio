@@ -8,7 +8,10 @@ const OtherStuff = () => {
     <div className='box-container' id='contact'>
       <div className='client-outline' ></div>
       <div className='content-container'>
-        <Fade duration="3000" triggerOnce={true}><h1>Get In Touch</h1></Fade>
+        <Fade duration="3000" triggerOnce={true}>
+          <h1>Get In Touch</h1>
+          <p>Please note this form is still under development so will not work at the moment.</p>
+        </Fade>
         <Fade direction="up" duration="3000" triggerOnce={true}>
         <div className='form-container'>
           <ContactForm />

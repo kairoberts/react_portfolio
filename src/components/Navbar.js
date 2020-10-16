@@ -31,7 +31,7 @@ const Navbar = () => {
         id='shrink-linkss'
       ><p>Portfolio</p></Link>
       <img
-        src={Logo} alt='Moncler' className='logo' id='shrink-logo' onClick={() => scroll.scrollToTop()}
+        src={Logo} alt='KR Web Development' className='logo' id='shrink-logo' onClick={() => scroll.scrollToTop()}
       ></img>
       <Link
         activeClass="active"
