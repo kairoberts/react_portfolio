@@ -909,7 +909,7 @@ and (max-device-width : 640px)  {
   }
 
   .scroll-arrow {
-    transform: translateY(-70px) translateX(810px) rotate(45deg);
+    transform: translateY(-30px) translateX(810px) rotate(45deg);
   }
 
   .links-container {
