@@ -48,7 +48,7 @@ const Banner = () => {
           <a href='https://github.com/kairoberts' className='icons'> <FiGithub size={30} /></a>
         </motion.div>
 
-        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-110} duration={600} ><Button
+        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-95} duration={600} ><Button
           variant="outline-light" className='btn-container'>Get In Touch</Button></Link>
 
         <Button variant="outline-light" className='btn-container' href={cv} download='KaiRobertsCV'>Download CV</Button>
