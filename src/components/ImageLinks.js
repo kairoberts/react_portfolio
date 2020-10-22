@@ -31,7 +31,7 @@ const ImageLinks = () => {
         >
           <CodeSVG alt='Web Development' className='links-img' />
           <h1>Web Development</h1>
-          <p>Do you want a professional, afforable website that oozes elegance from top to bottom? Then click to get in touch.</p>
+          <p>Do you want a professional, afforable website that looks elegant from top to bottom? Then click to get in touch.</p>
         </motion.div>
       </Link>
 
