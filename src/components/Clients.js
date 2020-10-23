@@ -18,7 +18,6 @@ const Clients = () => {
   return (
 
     <div className='hidden-container'>
-      <div className='client-outline' ></div>
       <Fade duration="3000" triggerOnce={true}><h3>Clients</h3></Fade>
       <p>Examples</p>
       <div className='client-container'>

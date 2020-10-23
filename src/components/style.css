@@ -752,6 +752,14 @@ and (max-width : 580px)  {
 
   /* Image links ends here */
 
+  /* Clients starts here */
+
+  .hidden-container {
+    display: none;
+  }
+
+  /* Clients ends here */
+
   /* Main body starts here */
 
   .box-filler {
