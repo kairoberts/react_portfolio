@@ -12,7 +12,7 @@ const OtherStuff = () => {
           <h1>Get In Touch</h1>
           <p>Please note this form is still under development so will not work at the moment.</p>
         </Fade>
-        <Fade direction="up" duration="3000" triggerOnce={true}>
+        <Fade duration="3500" triggerOnce={true}>
         <div className='form-container'>
           <ContactForm />
         </div>

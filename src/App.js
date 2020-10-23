@@ -19,7 +19,6 @@ function App() {
       <Header />
       <Banner />
       <ImageLinks />
-      <Clients />
       <Filler />
       <About />
       <Filler />
@@ -28,6 +27,7 @@ function App() {
       <Testimonials />
       <Filler />
       <Contact />
+      <Clients />
       <Footer />
 
     </div>

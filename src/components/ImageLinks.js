@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import VideoSVG from './VideoSVG';
+import WebDeploy from './WebDeploy';
 import CodeSVG from './CodeSVG';
-import UXDesignSVG from './UXDesignSVG';
+import UIDesignSVG from './UIDesignSVG';
 import { motion } from 'framer-motion';
 
 const ImageLinks = () => {
@@ -15,9 +15,9 @@ const ImageLinks = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 2 }}
         >
-          <UXDesignSVG alt='UX Design' className='links-img' />
-          <h1>UX/UI Design</h1>
-          <p>Need help designing your website? I can assist with that. Click here to get in touch.</p>
+          <UIDesignSVG alt='UI Design' className='links-img' />
+          <h1>Design</h1>
+          <p>The first step to creating your website is through UI Design, deciding how you want it to look and feel.</p>
         </motion.div>
       </Link>
 
@@ -30,8 +30,8 @@ const ImageLinks = () => {
           transition={{ delay: 1, duration: 2 }}
         >
           <CodeSVG alt='Web Development' className='links-img' />
-          <h1>Web Development</h1>
-          <p>Do you want a professional, afforable website that looks elegant from top to bottom? Then click to get in touch.</p>
+          <h1>Develop</h1>
+          <p>Once the design process is complete, the next step is to develop your website to match your designs.</p>
         </motion.div>
       </Link>
 
@@ -43,9 +43,9 @@ const ImageLinks = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 2 }}
         >
-          <VideoSVG alt='Video Editing' className='links-img' />
-          <h1>Video Editing</h1>
-          <p>Coming soon... Click to get in touch and find out more.</p>
+          <WebDeploy alt='Deployment' className='links-img' />
+          <h1>Deploy</h1>
+          <p>The final step is to publish your website online for everyone to see.</p>
         </motion.div>
       </Link>
     </div>

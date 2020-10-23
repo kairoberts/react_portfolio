@@ -2,7 +2,6 @@ import React from 'react'
 import { Carousel } from '3d-react-carousal';
 import { Button } from 'react-bootstrap';
 import comingSoon from './Images/comingsoon.jpg';
-import tyneBridge from './Images/tynebridge.jpg';
 
 const Swiper = () => {
   let slides = [
@@ -15,7 +14,7 @@ const Swiper = () => {
       </div>
     </div>,
     <div className='swiper-info'>
-      <img src={tyneBridge} alt="1" />
+      <img src={comingSoon} alt="1" />
       <h3 className="h3-responsive">Website name here</h3>
       <p>Information about the website here</p>
       <div className='swiper-btn'>
@@ -31,7 +30,7 @@ const Swiper = () => {
       </div>
     </div>,
     <div className='swiper-info'>
-      <img src={tyneBridge} alt="1" />
+      <img src={comingSoon} alt="1" />
       <h3 className="h3-responsive">Website name here</h3>
       <p>Information about the website here</p>
       <div className='swiper-btn'>

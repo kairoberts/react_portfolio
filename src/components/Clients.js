@@ -18,8 +18,9 @@ const Clients = () => {
   return (
 
     <div className='hidden-container'>
+      <div className='client-outline' ></div>
       <Fade duration="3000" triggerOnce={true}><h3>Clients</h3></Fade>
-      <p>These are not official clients, just examples for demonstration purposes</p>
+      <p>Examples</p>
       <div className='client-container'>
         <AiOutlineYoutube alt='coming soon' className='client-logo' />
         <SiSafari alt='coming soon' className='client-logo' />

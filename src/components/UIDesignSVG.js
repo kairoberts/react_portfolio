@@ -1,6 +1,6 @@
 import React from "react";
 
-function UXDesignSVG(props) {
+function UIDesignSVG(props) {
   return (
     <svg
       fill="currentColor"
@@ -18,4 +18,4 @@ function UXDesignSVG(props) {
   );
 }
 
-export default UXDesignSVG;
+export default UIDesignSVG;

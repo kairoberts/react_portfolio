@@ -9,7 +9,7 @@ const Header = () => {
 
   window.onscroll = function () { hiddenButton() };
   function hiddenButton() {
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
       document.getElementById("scroll-btn").style.display = "block";
     } else {
       document.getElementById("scroll-btn").style.display = "none";
