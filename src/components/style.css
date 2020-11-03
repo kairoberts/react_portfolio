@@ -616,6 +616,7 @@ and (max-width : 580px) {
     position: absolute;
     outline: none;
     top: 5px;
+    cursor: pointer;
   }
 
   .icons {

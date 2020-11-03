@@ -38,7 +38,12 @@ class MobileMenu extends React.Component {
             onStateChange={(state) => this.handleStateChange(state)}
             customBurgerIcon={<BiMenuAltLeft />}
             customCrossIcon={<VscChromeClose />}>
-            <img src={Logo} alt='Moncler' className='mobile-logo' onClick={() => scroll.scrollToTop()}></img>
+            <img
+            src={Logo} 
+            alt='KR Web Development' 
+            className='mobile-logo' 
+            onClick={() => scroll.scrollToTop() || this.closeMenu()}
+            ></img>
             <Link
               to="about"
               spy={true}
