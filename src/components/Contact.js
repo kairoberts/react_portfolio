@@ -10,7 +10,8 @@ const OtherStuff = () => {
       <div className='content-container'>
         <Fade duration="3000" triggerOnce={true}>
           <h1>Get In Touch</h1>
-          <p>Please note this form is still under development so will not work at the moment.</p>
+          <h6>The button itself has no validation yet but your message will definitely send.</h6>
+          <h6>I will usually respond within the day.</h6>
         </Fade>
         <Fade duration="3500" triggerOnce={true}>
         <div className='form-container'>

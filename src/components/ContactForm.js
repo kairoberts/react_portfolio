@@ -1,28 +1,50 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
+import emailjs from 'emailjs-com'
+import { Button } from 'react-bootstrap';
 import { TextField, InputLabel, Select, FormControl } from '@material-ui/core';
 
 const contactForm = () => {
 
-
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs.sendForm('outlook', 'outlook_template', e.target, 'user_eGGN8mAzPC10UVSag7A5o')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
+  }
 
   return (
-    <form>
+    <form onSubmit={sendEmail}>
       <div className='form-container'>
         <div className='textField'>
-          <TextField required type="text" id="outlined-basic" label="Full Name:" variant="outlined" fullWidth />
+          <TextField
+            required type="text"
+            id="outlined-basic"
+            label="Full Name:"
+            variant="outlined"
+            name="name"
+            fullWidth />
         </div>
         <div className='textField'>
-          <TextField required type="email" id="outlined-basic" label="Email Address:" variant="outlined" fullWidth />
+          <TextField
+            required type="email"
+            id="outlined-basic"
+            label="Email:"
+            variant="outlined"
+            name="email"
+            fullWidth />
         </div>
         <div className='textField'>
           <FormControl required variant="outlined" fullWidth>
-            <InputLabel htmlFor="outlined-age-native-simple">Choose An Option:</InputLabel>
+            <InputLabel htmlFor="outlined-age-native-simple">Subject:</InputLabel>
             <Select
               native
               label="Age"
               inputProps={{
-                name: 'age',
+                name: 'subject',
                 id: 'outlined-age-native-simple',
               }}
             >
@@ -40,12 +62,11 @@ const contactForm = () => {
             required id="outlined-basic"
             label="Message"
             variant="outlined"
+            name="message"
             fullWidth
             multiline
             rows={6} />
         </div>
-        <Form.Check type="checkbox" label="I consent to be contacted by KR Web Development" className='checkbox' />
-        <br />
         <Button variant="outline-dark" className='contact-btn' type="submit">Send Message</Button>
       </div >
     </form>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import Button  from 'react-bootstrap/Button';
 import purpleVector from './Images/purpleVector.jpg';
 import tynebridge from './Images/tynebridge.jpg';
 import cv from './File/KaiRobertsCV.pdf';
@@ -31,12 +31,12 @@ const Banner = () => {
           initial={{ y: -500 }}
           animate={{ y: 0 }}
           transition={{ delay: 3, type: 'spring', stiffness: 150 }}
-        >A Message To Visitors:</motion.h3>
+        >Dear Visitor:</motion.h3>
         <motion.p
           initial={{ y: -500 }}
           animate={{ y: 0 }}
           transition={{ delay: 3, type: 'spring', stiffness: 150 }}
-          className='responsive-font'>Please note that this website is still in development and is for demonstration purposes only at the moment, so some elements may not work yet. Thank you, Kai.</motion.p>
+          className='responsive-font'>I am a British developer based out of Newcastle upon Tyne, England. If you would like to get in touch or download my CV, please click the buttons below.</motion.p>
 
         <motion.div
           initial={{ y: -500 }}
@@ -48,7 +48,7 @@ const Banner = () => {
           <a href='https://github.com/kairoberts' className='icons'> <FiGithub size={30} /></a>
         </motion.div>
 
-        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-95} duration={600} ><Button
+        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={600} ><Button
           variant="outline-light" className='btn-container'>Get In Touch</Button></Link>
 
         <Button variant="outline-light" className='btn-container' href={cv} download='KaiRobertsCV'>Download CV</Button>

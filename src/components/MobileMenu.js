@@ -12,54 +12,80 @@ import { FiGithub } from 'react-icons/fi';
 
 
 
-const MobileMenu = () => {
-  return (
-    <div className='mobile-nav' id='mob-nav'>
-      <div className='mobile-container'>
-        <Menu customBurgerIcon={<BiMenuAltLeft />}
-          customCrossIcon={<VscChromeClose />}>
-          <img src={Logo} alt='Moncler' className='mobile-logo' onClick={() => scroll.scrollToTop()}></img>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={800}
-            className='navbar-links'
-          ><CgMenuMotion size={30} /> About Me</Link>
-          <Link
-            to="portfolio"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={800}
-            className='navbar-links'
-          ><CgMenuMotion size={30} /> Portfolio</Link>
-          <Link
-            to="testimonials"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={800}
-            className='navbar-links'
-          ><CgMenuMotion size={30} /> Testimonials</Link>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={800}
-            className='navbar-links'
-          ><CgMenuMotion size={30} /> Contact</Link>
-          <div className='flex-item'>
-          <a href='https://www.instagram.com/_kairoberts' className='icons'><SiInstagram size={30} /></a>
-          <a href='https://www.linkedin.com/in/kairobertss' className='icons'><AiOutlineLinkedin size={35} /></a>
-          <a href='https://github.com/kairoberts' className='icons'> <FiGithub size={30} /></a>
+class MobileMenu extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      menuOpen: false
+    };
+  }
+
+  handleStateChange(state) {
+    this.setState({ menuOpen: state.isOpen })
+  }
+
+  closeMenu() {
+    this.setState({ menuOpen: false });
+  }
+
+
+  render() {
+    return (
+      <div className='mobile-nav' id='mob-nav' >
+        <div className='mobile-container'>
+          <Menu
+            isOpen={this.state.menuOpen}
+            onStateChange={(state) => this.handleStateChange(state)}
+            customBurgerIcon={<BiMenuAltLeft />}
+            customCrossIcon={<VscChromeClose />}>
+            <img src={Logo} alt='Moncler' className='mobile-logo' onClick={() => scroll.scrollToTop()}></img>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={600}
+              className='navbar-links'
+              onClick={() => this.closeMenu()}
+            ><CgMenuMotion size={30} /> About Me</Link>
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={600}
+              className='navbar-links'
+              onClick={() => this.closeMenu()}
+            ><CgMenuMotion size={30} /> Portfolio</Link>
+            <Link
+              to="testimonials"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={600}
+              className='navbar-links'
+              onClick={() => this.closeMenu()}
+            ><CgMenuMotion size={30} /> Testimonials</Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={600}
+              className='navbar-links'
+              onClick={() => this.closeMenu()}
+            ><CgMenuMotion size={30} /> Contact</Link>
+            <div className='flex-item'>
+              <a href='https://www.instagram.com/_kairoberts' className='icons'><SiInstagram size={30} /></a>
+              <a href='https://www.linkedin.com/in/kairobertss' className='icons'><AiOutlineLinkedin size={35} /></a>
+              <a href='https://github.com/kairoberts' className='icons'> <FiGithub size={30} /></a>
+            </div>
+          </Menu>
         </div>
-        </Menu>
       </div>
-    </div>
-  )
+    )
+  }
 }
+
 
 export default MobileMenu;
