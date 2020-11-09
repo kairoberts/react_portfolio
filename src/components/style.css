@@ -1,6 +1,6 @@
 @viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+  width: device-width;
+  zoom: 1;
 }
 
 * {
@@ -22,7 +22,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 #scroll-btn {
@@ -46,7 +46,7 @@ header {
   width: 230px;
   margin: 5px;
   cursor: pointer;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .logo:hover {
@@ -58,12 +58,12 @@ header {
   justify-content: center;
   width: 70vw;
   height: 14vh;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .navbar-links {
-  margin:4vw 2.5vw 2.5vw 2.5vw;
-  font-family: 'Syne', sans-serif;
+  margin: 4vw 2.5vw 2.5vw 2.5vw;
+  font-family: "Syne", sans-serif;
   white-space: nowrap;
   width: 15%;
   color: black;
@@ -71,7 +71,7 @@ header {
   text-transform: uppercase;
   cursor: pointer;
   transition: transform 0.5s;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .navbar-links:hover {
@@ -114,7 +114,7 @@ header {
   height: 300px;
   width: 45%;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   position: absolute;
   color: white;
   font-size: 45px;
@@ -126,7 +126,8 @@ header {
 .banner-info h1 {
   font-size: 40px;
   padding: 3%;
-  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 .flex-item {
@@ -156,7 +157,7 @@ header {
   height: 30px;
   width: 30px;
   position: absolute;
-  transform: translateY(-50px) translateX(600px) rotate(45deg)
+  transform: translateY(-50px) translateX(600px) rotate(45deg);
 }
 
 .scroll-arrow span {
@@ -193,17 +194,18 @@ header {
     top: 10px;
     left: 10px;
     opacity: 1;
-  } 
+  }
   25% {
     top: 0px;
     left: 0px;
     opacity: 0;
   }
-  50%, 100% {
+  50%,
+  100% {
     top: 10px;
     left: 10px;
     opacity: 1;
-  } 
+  }
 }
 
 /* banner ends here */
@@ -231,7 +233,7 @@ header {
   cursor: pointer;
   color: black !important;
   transition: transform 0.5s;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-decoration: none !important;
 }
 
@@ -268,10 +270,10 @@ header {
 /* About Me starts here */
 .box-container {
   position: sticky;
-  height: 800px;
+  height: 750px;
   width: 100%;
   padding-bottom: 2%;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background-color: white;
 }
 
@@ -289,7 +291,8 @@ header {
   text-align: center;
 }
 
-.content-container h4, h6 {
+.content-container h4,
+h6 {
   padding: 1%;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
@@ -310,7 +313,7 @@ header {
 }
 
 .content-info {
-  height: 700px;
+  height: 600px;
   width: 85%;
   display: flex;
   margin: 0 auto;
@@ -328,13 +331,13 @@ header {
 }
 
 .content-message {
-  height: 90px;
   width: 55vw;
   margin: 0%;
   padding: 0%;
+  padding-bottom: 1%;
   font-size: 1.2vw;
   text-align: left;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .skills-container {
@@ -428,7 +431,7 @@ header {
   font-size: 18px;
 }
 
-.card-feedback h1{
+.card-feedback h1 {
   color: purple;
 }
 
@@ -440,7 +443,7 @@ header {
   margin: 0 auto;
   height: 600px;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .textField {
@@ -463,19 +466,19 @@ header {
 /* Contact me ends here */
 
 /* Clients starts here */
-.hidden-container{ 
+.hidden-container {
   height: 200px;
   width: 100%;
   overflow: hidden;
   background-color: white;
   position: sticky;
-
 }
 
-.hidden-container h3, p {
+.hidden-container h3,
+p {
   margin-top: 0.5%;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .client-container {
@@ -510,14 +513,14 @@ header {
 
 @keyframes scroll-left {
   0% {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -531,7 +534,7 @@ footer {
   border-top: 1px solid black;
   box-shadow: 0px 0px 20px 0px;
   overflow-y: hidden;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .icons-container {
@@ -539,8 +542,6 @@ footer {
   padding: 1%;
   display: inline;
 }
-
-
 
 .icons {
   height: 30px;
@@ -551,8 +552,6 @@ footer {
   cursor: pointer;
 }
 
-
-
 .btn-toTop {
   cursor: pointer;
   margin: 0 auto;
@@ -562,18 +561,8 @@ footer {
 
 /* footer ends here */
 
-
-
-
-
-
-
-
-
 /* Media queries */
-@media only screen
-and (min-width : 320px)   
-and (max-width : 580px) {
+@media only screen and (min-width: 320px) and (max-width: 580px) {
   * {
     padding: 0%;
     margin: 0%;
@@ -650,7 +639,8 @@ and (max-width : 580px) {
     width: 100%;
   }
 
-  .flex-item :hover, :focus {
+  .flex-item :hover,
+  :focus {
     outline: none;
     box-shadow: none;
   }
@@ -659,7 +649,8 @@ and (max-width : 580px) {
     color: black !important;
   }
 
-  .flex-item a:hover, a:focus {
+  .flex-item a:hover,
+  a:focus {
     color: purple !important;
   }
 
@@ -710,14 +701,15 @@ and (max-width : 580px) {
     width: 80%;
     position: absolute;
     left: 355px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     color: white;
   }
 
   .banner-info h1 {
     font-size: 35px;
     margin-top: 40px;
-    text-shadow: -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px -1.5px 0 #000;
+    text-shadow: -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000, 1.5px -1.5px 0 #000,
+      -1.5px -1.5px 0 #000;
   }
 
   .banner-info h3 {
@@ -775,7 +767,7 @@ and (max-width : 580px) {
     font-size: 35px;
     padding: 8%;
   }
-  
+
   .content-container h5 {
     font-size: 18px;
     padding: 2%;
@@ -788,7 +780,7 @@ and (max-width : 580px) {
   }
 
   /* About us starts here */
-  
+
   .content-info {
     display: inline;
   }
@@ -813,7 +805,7 @@ and (max-width : 580px) {
     width: 95vw;
   }
 
-  .content-message{
+  .content-message {
     height: 110px;
     width: 95vw;
     text-align: center;
@@ -849,30 +841,30 @@ and (max-width : 580px) {
   /* Portfolio ends here */
 
   /* Testimonials starts here */
-   .card {
+  .card {
     text-align: center;
     height: 50vh;
     width: 45vw;
     margin-left: 10px;
     box-shadow: 0px 0px 10px 0px;
   }
-  
+
   .card:hover {
     transform: none;
   }
-  
+
   .card-image-mobile {
     height: 100px;
     width: 100px;
   }
-  
+
   .card-feedback {
     height: 30vh;
     width: 90%;
     background-color: transparent;
     margin: 0 auto;
   }
-  
+
   .card-feedback h6 {
     font-size: 12px;
     word-wrap: break-word;
@@ -882,7 +874,7 @@ and (max-width : 580px) {
   .card-feedback h1 {
     font-size: 25px;
   }
-  
+
   /* Testimonials ends here */
 
   /* Contact starts here */
@@ -891,7 +883,7 @@ and (max-width : 580px) {
   }
 
   .textField {
-    width: 90%;    
+    width: 90%;
   }
 
   .content-container h1 {
@@ -904,10 +896,8 @@ and (max-width : 580px) {
   /* Contact ends here */
 }
 
-
 /* Larger Screen Media Queries */
-@media screen and (min-device-width: 1800px){
-
+@media screen and (min-device-width: 1800px) {
   .contain-banner {
     height: 700px;
   }
