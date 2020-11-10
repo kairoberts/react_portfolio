@@ -6,7 +6,7 @@ import { FaSass } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { BsFillBootstrapFill } from "react-icons/bs";
-import { FaPhp } from "react-icons/fa";
+// import { FaPhp } from "react-icons/fa";
 import { SiPython } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { FaGit } from "react-icons/fa";
@@ -67,10 +67,6 @@ const About = () => {
                 <div className="skill">
                   <BsFillBootstrapFill size={50} />
                   <p>Bootstrap</p>
-                </div>
-                <div className="skill">
-                  <FaPhp size={55} />
-                  <p>PHP</p>
                 </div>
                 <div className="skill">
                   <SiPython size={55} />
