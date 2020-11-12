@@ -33,12 +33,13 @@ const About = () => {
               </h5>
               <p className="content-message">
                 I am a 23 year old Computer Science Graduate from Newcastle upon
-                Tyne, England. I pride himself on hard work and always aiming to
+                Tyne, England, I pride myself on hard work and always aiming to
                 improve my skill set. I am currently in the process of
-                self-teaching React. I am learning how to use things such as
-                const, let, mapping, useState, useEffect, props and useRef
-                within components and eventually state management through
-                useContext and Redux.
+                self-teaching React where I am learning how to use things such
+                as const, let, mapping, useState, useEffect, props, useRef,
+                React Router and more within components and eventually, state
+                management through useContext and Redux as well as Axios to work
+                with APIs.
               </p>
             </Fade>
             <Fade direction="right" duration="3000" triggerOnce={true}>

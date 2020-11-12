@@ -310,6 +310,7 @@ h6 {
   height: 600px;
   width: 20vw;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .content-info {
