@@ -36,10 +36,10 @@ const About = () => {
                 Tyne, England, I pride myself on hard work and always aiming to
                 improve my skill set. I am currently in the process of
                 self-teaching React where I am learning how to use things such
-                as const, let, mapping, useState, useEffect, props, useRef,
-                React Router and more within components and eventually, state
-                management through useContext and Redux as well as Axios to work
-                with APIs.
+                as const, let, mapping, React Hooks, useState, useEffect, props,
+                useRef, React Router and more within components and eventually,
+                state management through useContext and Redux as well as Axios
+                to work with APIs.
               </p>
             </Fade>
             <Fade direction="right" duration="3000" triggerOnce={true}>
