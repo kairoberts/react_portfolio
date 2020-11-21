@@ -307,10 +307,8 @@ h6 {
 }
 
 .kairob {
-  height: 600px;
-  width: 20vw;
-  margin: 0 auto;
-  object-fit: cover;
+  height: 80vh;
+  margin: 2rem;
 }
 
 .content-info {
