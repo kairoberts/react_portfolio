@@ -40,9 +40,8 @@ const Banner = () => {
           transition={{ delay: 3, type: "spring", stiffness: 150 }}
           className="responsive-font"
         >
-          I am a British developer based out of Newcastle upon Tyne, England. If
-          you would like to get in touch or download my CV, please click the
-          buttons below.
+          This website is no longer in use and is for demonstration purposes
+          only now, you can view my updated portfolio at kairoberts.netlify.app
         </motion.p>
 
         <motion.div

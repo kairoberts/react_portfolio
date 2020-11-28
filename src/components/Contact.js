@@ -9,7 +9,6 @@ const OtherStuff = () => {
       <div className="content-container">
         <Fade duration="3000" triggerOnce={true}>
           <h1>Get In Touch</h1>
-          <h6>I will usually respond within the day.</h6>
         </Fade>
         <Fade duration="3500" triggerOnce={true}>
           <div className="form-container">

@@ -1,51 +1,44 @@
-import React from 'react';
-import emailjs from 'emailjs-com'
-import { Button } from 'react-bootstrap';
-import { TextField, InputLabel, Select, FormControl } from '@material-ui/core';
+import React from "react";
+import { Button } from "react-bootstrap";
+import { TextField, InputLabel, Select, FormControl } from "@material-ui/core";
 
 const contactForm = () => {
-
-  function sendEmail(e) {
-    e.preventDefault();
-    emailjs.sendForm('outlook', 'outlook_template', e.target, 'user_eGGN8mAzPC10UVSag7A5o')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-    e.target.reset();
-  }
-
   return (
-    <form onSubmit={sendEmail}>
-      <div className='form-container'>
-        <div className='textField'>
+    <form>
+      <div className="form-container">
+        <div className="textField">
           <TextField
-            required type="text"
+            required
+            type="text"
             id="outlined-basic"
             label="Full Name:"
             variant="outlined"
             name="name"
-            fullWidth />
+            fullWidth
+          />
         </div>
-        <div className='textField'>
+        <div className="textField">
           <TextField
-            required type="email"
+            required
+            type="email"
             id="outlined-basic"
             label="Email:"
             variant="outlined"
             name="email"
-            fullWidth />
+            fullWidth
+          />
         </div>
-        <div className='textField'>
+        <div className="textField">
           <FormControl required variant="outlined" fullWidth>
-            <InputLabel htmlFor="outlined-age-native-simple">Subject:</InputLabel>
+            <InputLabel htmlFor="outlined-age-native-simple">
+              Subject:
+            </InputLabel>
             <Select
               native
               label="Age"
               inputProps={{
-                name: 'subject',
-                id: 'outlined-age-native-simple',
+                name: "subject",
+                id: "outlined-age-native-simple",
               }}
             >
               <option> </option>
@@ -57,20 +50,24 @@ const contactForm = () => {
             </Select>
           </FormControl>
         </div>
-        <div className='textField'>
+        <div className="textField">
           <TextField
-            required id="outlined-basic"
+            required
+            id="outlined-basic"
             label="Message"
             variant="outlined"
             name="message"
             fullWidth
             multiline
-            rows={6} />
+            rows={6}
+          />
         </div>
-        <Button variant="outline-dark" className='contact-btn' type="submit">Send Message</Button>
-      </div >
+        <Button variant="outline-dark" className="contact-btn" type="submit">
+          Send Message
+        </Button>
+      </div>
     </form>
-  )
-}
+  );
+};
 
-export default contactForm
+export default contactForm;
