@@ -1,9 +1,6 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import purpleVector from "./Images/purpleVector.jpg";
 import tynebridge from "./Images/tynebridge.jpg";
-import cv from "./File/KaiRobertsCV.pdf";
-import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
@@ -41,7 +38,13 @@ const Banner = () => {
           className="responsive-font"
         >
           This website is no longer in use and is for demonstration purposes
-          only now, you can view my updated portfolio at kairoberts.netlify.app
+          only now, you can view my updated portfolio at{" "}
+          <a
+            href="https://www.kairoberts.dev"
+            style={{ color: "cyan", fontWeight: "bold" }}
+          >
+            www.kairoberts.dev
+          </a>
         </motion.p>
 
         <motion.div
@@ -58,36 +61,6 @@ const Banner = () => {
             <FiGithub size={30} />
           </a>
         </motion.div>
-
-        <Link
-          activeClass="active"
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={600}
-        >
-          <Button variant="outline-light" className="btn-container">
-            Get In Touch
-          </Button>
-        </Link>
-
-        <Button
-          variant="outline-light"
-          className="btn-container"
-          href={cv}
-          download="KaiRobertsCV"
-        >
-          Download CV
-        </Button>
-
-        <Link to="about" spy={true} smooth={true} offset={-95} duration={800}>
-          <div className="scroll-arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </Link>
       </div>
     </motion.div>
   );
